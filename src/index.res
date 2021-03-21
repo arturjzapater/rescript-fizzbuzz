@@ -3,7 +3,6 @@
 open Fizzbuzz
 open Belt
 
-let arg = argv[2]
+argv[2]
 -> Option.flatMap(Int.fromString)
-
-FizzBuzz.fizzbuzz(arg)
+-> FizzBuzz.fizzbuzz
