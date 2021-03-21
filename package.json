@@ -1,0 +1,19 @@
+{
+  "name": "fizzbuzz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "bs-platform": "^9.0.2"
+  },
+  "scripts": {
+		"build": "bsb -make-world -clean-world",
+		"watch": "bsb -make-world -clean-world -w",
+		"start": "node src/index.bs.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
