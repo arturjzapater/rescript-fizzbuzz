@@ -5,7 +5,7 @@ import * as Belt_Array from "bs-platform/lib/es6/belt_Array.js";
 import * as Belt_Option from "bs-platform/lib/es6/belt_Option.js";
 import * as Fizzbuzz$Fizzbuzz from "./fizzbuzz.bs.js";
 
-Fizzbuzz$Fizzbuzz.FizzBuzz.fizzbuzz(Belt_Option.flatMap(Belt_Array.get(process.argv, 2), Belt_Int.fromString));
+Fizzbuzz$Fizzbuzz.fizzbuzz(Belt_Option.flatMap(Belt_Array.get(process.argv, 2), Belt_Int.fromString));
 
 export {
   

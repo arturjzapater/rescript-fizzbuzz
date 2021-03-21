@@ -11,35 +11,26 @@ function logNum(num) {
   
 }
 
-function _fizzbuzz(_current, until) {
-  while(true) {
-    var current = _current;
-    if (current === until) {
-      return logNum(current);
-    }
-    logNum(current);
-    _current = current + 1 | 0;
-    continue ;
-  };
-}
-
 function fizzbuzz(until) {
   if (until !== undefined) {
-    return _fizzbuzz(1, until);
+    var _current = 1;
+    while(true) {
+      var current = _current;
+      if (current === until) {
+        return logNum(current);
+      }
+      logNum(current);
+      _current = current + 1 | 0;
+      continue ;
+    };
   } else {
     console.log("Please, input a number to count to");
     return ;
   }
 }
 
-var FizzBuzz = {
-  logNum: logNum,
-  _fizzbuzz: _fizzbuzz,
-  fizzbuzz: fizzbuzz
-};
-
 export {
-  FizzBuzz ,
+  fizzbuzz ,
   
 }
 /* No side effect */
